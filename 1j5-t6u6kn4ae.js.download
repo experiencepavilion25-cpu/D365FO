@@ -1,0 +1,4 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="121f5905-ca22-1189-a327-27b702ddd271")}catch(e){}}();
+(()=>{"use strict";(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,391242,r=>{var t=r.i(285820);r.S([t,"default,f"],391242)},285820,r=>{let t=(0,r.i(840387).createClientLogger)("EctoEmptyErrorBoundary");r.s(["f",0,function({error:r}){return t.error({error:r},"Next boundary caught an error"),null}])}])})();
+
+//# debugId=121f5905-ca22-1189-a327-27b702ddd271

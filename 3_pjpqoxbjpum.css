@@ -1,0 +1,1 @@
+div:has(>[data-settings-interactive]:hover)>.settings-card-divider{opacity:0}div:has(>[data-settings-interactive]:hover)+div>.settings-card-divider{opacity:0}

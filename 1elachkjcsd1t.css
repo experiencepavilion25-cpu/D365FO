@@ -1,0 +1,1 @@
+.ur-hscroll__track{-webkit-overflow-scrolling:touch;-ms-overflow-style:none;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;scroll-padding-inline-start:16px;overflow-x:auto}.ur-hscroll__track::-webkit-scrollbar{width:0;height:0;display:none}.ur-hscroll__track>*{scroll-snap-align:start;flex-shrink:0;height:100%}

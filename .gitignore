@@ -1,0 +1,4 @@
+node_modules/
+dist/
+data/records.json
+npm-debug.log*

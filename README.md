@@ -1,15 +1,30 @@
 # D365FO
 
-This repository contains files collected from a saved web page, including HTML documents, JavaScript and CSS assets, and images.
+A React application served and built with Vite. The original saved HTML contains the compiled React application; its JavaScript bundle and styles are extracted into `src/`.
 
-## Contents
+## Requirements
 
-- `saved_resource.html` and `saved_resource(1).html`: saved HTML documents.
-- `*.js.download` and `*.css`: downloaded JavaScript and stylesheet assets.
-- Image and SVG files: accompanying visual assets.
+- Node.js 20.19+ or 22.12+
+- npm
 
-## Important
+## Run locally
 
-These files do not include the original application source code, dependency manifests, or build and deployment configuration. As a result, this repository is not a ready-to-build application project.
+```powershell
+npm install
+npm run dev
+```
 
-The repository is public. Confirm you have permission to redistribute these files and any content they contain.
+Create a production build and serve it locally:
+
+```powershell
+npm run build
+npm run preview
+```
+
+The Vite development and preview servers provide a local `/actions` API for the app's record operations. Data is saved to `data/records.json`, which is ignored by Git.
+
+## Source files
+
+- `src/main.jsx` contains the compiled React bundle extracted from the saved HTML. The original editable JSX source was not included in the downloaded files.
+- `src/style.css` contains the styles extracted from the saved HTML.
+- The other downloaded HTML, JavaScript, CSS, and image files are retained as captured assets; Vite does not need the unrelated `.js.download` files to run the app.

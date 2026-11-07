@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 const recordsPath = resolve(
   dirname(fileURLToPath(import.meta.url)),
@@ -189,5 +190,7 @@ function localRecordsApi() {
 }
 
 export default defineConfig({
-  plugins: [localRecordsApi()],
+  plugins: [react(), localRecordsApi()],
+  server: { port: 5173 },
+  preview: { port: 4173 },
 });

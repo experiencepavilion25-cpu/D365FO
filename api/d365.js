@@ -84,7 +84,7 @@ export default async function handler(req, res) {
     } catch {
       return res.send(text);
     }
-  } catch (e) {
-    return res.status(500).json({ error: e.message });
-  }
+ } catch (e) {
+  return res.status(500).json({ error: "D365 fetch failed: " + e.message + " - Is IN01.os.operations.dynamics.com reachable from public internet? OneBox/VM needs VPN." });
+}
 }

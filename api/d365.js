@@ -22,7 +22,7 @@ async function getToken() {
     client_id: clientId,
     client_secret: clientSecret,
     grant_type: "client_credentials",
-    scope: `https://erp.dynamics.com/.default`,
+    scope: `${foUrl}/.default`,
   });
 
   const r = await fetch(tokenUrl, {
